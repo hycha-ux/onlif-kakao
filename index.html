@@ -234,6 +234,211 @@
     }
     footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
 
+    /* DEMO FLOW */
+    .demo { background: var(--primary); }
+    .demo .section-label { color: rgba(254,229,0,0.7); }
+    .demo .section-title { color: var(--white); }
+    .demo .section-desc { color: rgba(255,255,255,0.55); }
+
+    .flow-wrap {
+      display: flex; gap: 0; margin-top: 56px;
+      align-items: flex-start; justify-content: center;
+      flex-wrap: wrap; gap: 16px;
+    }
+    .flow-arrow {
+      color: rgba(254,229,0,0.5); font-size: 28px;
+      align-self: center; flex-shrink: 0;
+      display: flex; align-items: center; padding: 0 4px;
+    }
+    .phone-frame {
+      width: 220px; flex-shrink: 0;
+      background: #fff; border-radius: 32px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+      overflow: hidden; border: 6px solid #222;
+      position: relative;
+    }
+    .phone-notch {
+      width: 80px; height: 20px; background: #222;
+      border-radius: 0 0 12px 12px;
+      margin: 0 auto; position: relative; z-index:2;
+    }
+    .phone-screen {
+      background: #f5f5f5; min-height: 340px;
+      padding: 16px 14px; font-family: 'Noto Sans KR', sans-serif;
+    }
+    .phone-step-label {
+      text-align: center; font-size: 10px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: rgba(254,229,0,0.8); margin-bottom: 12px;
+    }
+
+    /* Screen 1 - Login */
+    .screen-login { background: #fff; }
+    .screen-login .app-header {
+      background: var(--primary); padding: 14px 12px;
+      text-align: center;
+    }
+    .screen-login .app-header span {
+      color: #fff; font-size: 13px; font-weight: 700;
+    }
+    .screen-login .login-body { padding: 20px 14px; }
+    .screen-login .login-title {
+      font-size: 14px; font-weight: 700; color: #1a1a2e;
+      margin-bottom: 6px;
+    }
+    .screen-login .login-sub {
+      font-size: 11px; color: #9ca3af; margin-bottom: 20px; line-height: 1.5;
+    }
+    .kakao-login-btn {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      background: #FEE500; border-radius: 8px;
+      padding: 12px; font-size: 12px; font-weight: 700; color: #3c1e1e;
+      margin-bottom: 12px; cursor: pointer;
+    }
+    .kakao-login-btn img { width: 16px; }
+    .login-divider {
+      text-align: center; font-size: 10px; color: #d1d5db; margin: 12px 0;
+      position: relative;
+    }
+    .login-divider::before, .login-divider::after {
+      content: ''; position: absolute; top: 50%; width: 38%;
+      height: 1px; background: #e5e7eb;
+    }
+    .login-divider::before { left: 0; }
+    .login-divider::after { right: 0; }
+    .consent-box {
+      background: #f9fafb; border-radius: 8px; padding: 12px; margin-top: 12px;
+    }
+    .consent-title { font-size: 10px; font-weight: 700; color: #374151; margin-bottom: 8px; }
+    .consent-item {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 10px; color: #6b7280; margin-bottom: 4px;
+    }
+    .consent-check {
+      width: 12px; height: 12px; border-radius: 3px;
+      background: #FEE500; display: flex; align-items: center;
+      justify-content: center; font-size: 8px; flex-shrink: 0;
+    }
+
+    /* Screen 2 - Dashboard */
+    .screen-dash { background: #f8f8f6; }
+    .dash-header {
+      background: var(--primary); padding: 14px 12px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .dash-header span { color: #fff; font-size: 12px; font-weight: 700; }
+    .dash-avatar {
+      width: 24px; height: 24px; border-radius: 50%;
+      background: #FEE500; display: flex; align-items: center;
+      justify-content: center; font-size: 11px;
+    }
+    .dash-body { padding: 14px 12px; }
+    .dash-welcome { font-size: 12px; font-weight: 700; color: #1a1a2e; margin-bottom: 4px; }
+    .dash-welcome span { color: #ca8a04; }
+    .dash-sub { font-size: 10px; color: #9ca3af; margin-bottom: 14px; }
+    .dash-card {
+      background: #fff; border-radius: 10px; padding: 12px;
+      margin-bottom: 10px; border: 1px solid #e5e7eb;
+    }
+    .dash-card-title { font-size: 10px; font-weight: 700; color: #374151; margin-bottom: 6px; }
+    .dash-stat {
+      display: flex; gap: 6px; margin-bottom: 4px;
+    }
+    .stat-pill {
+      background: #fef9c3; border-radius: 6px; padding: 4px 8px;
+      font-size: 9px; color: #854d0e; font-weight: 600;
+    }
+    .dash-menu-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: #FEE500; border-radius: 8px; padding: 10px 12px;
+      font-size: 11px; font-weight: 700; color: #3c1e1e; margin-top: 8px;
+      cursor: pointer;
+    }
+
+    /* Screen 3 - Chat */
+    .screen-chat { background: #b2c7d9; }
+    .chat-header {
+      background: #fff; padding: 12px;
+      display: flex; align-items: center; gap: 8px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .chat-avatar {
+      width: 28px; height: 28px; border-radius: 8px;
+      background: #FEE500; display: flex; align-items: center;
+      justify-content: center; font-size: 14px;
+    }
+    .chat-name { font-size: 12px; font-weight: 700; color: #1a1a2e; }
+    .chat-status { font-size: 9px; color: #22c55e; }
+    .chat-body { padding: 12px 10px; display: flex; flex-direction: column; gap: 8px; }
+    .chat-bubble {
+      max-width: 85%; padding: 9px 11px;
+      border-radius: 14px; font-size: 10px; line-height: 1.5;
+    }
+    .bubble-left {
+      background: #fff; color: #1a1a2e;
+      border-bottom-left-radius: 4px; align-self: flex-start;
+    }
+    .bubble-right {
+      background: #FEE500; color: #3c1e1e;
+      border-bottom-right-radius: 4px; align-self: flex-end;
+    }
+    .chat-btn-row { display: flex; flex-direction: column; gap: 4px; margin-top: 2px; }
+    .chat-quick-btn {
+      background: #fff; border: 1px solid #FEE500;
+      border-radius: 8px; padding: 6px 10px;
+      font-size: 10px; font-weight: 600; color: #3c1e1e;
+      text-align: center; cursor: pointer;
+    }
+    .chat-input-row {
+      background: #fff; display: flex; align-items: center;
+      padding: 8px 10px; gap: 6px;
+      border-top: 1px solid #e5e7eb; margin-top: auto;
+    }
+    .chat-input {
+      flex: 1; background: #f3f4f6; border-radius: 16px;
+      padding: 6px 10px; font-size: 10px; color: #9ca3af;
+    }
+    .chat-send {
+      width: 24px; height: 24px; background: #FEE500;
+      border-radius: 50%; display: flex; align-items: center;
+      justify-content: center; font-size: 11px;
+    }
+
+    /* Screen 4 - Confirm */
+    .screen-confirm { background: #fff; }
+    .confirm-header {
+      background: var(--primary); padding: 14px 12px; text-align: center;
+    }
+    .confirm-header span { color: #fff; font-size: 12px; font-weight: 700; }
+    .confirm-body { padding: 16px 14px; }
+    .confirm-icon {
+      width: 48px; height: 48px; background: #fef9c3;
+      border-radius: 50%; margin: 0 auto 12px;
+      display: flex; align-items: center; justify-content: center; font-size: 22px;
+    }
+    .confirm-title { text-align: center; font-size: 13px; font-weight: 700; color: #1a1a2e; margin-bottom: 4px; }
+    .confirm-sub { text-align: center; font-size: 10px; color: #9ca3af; margin-bottom: 16px; }
+    .confirm-card {
+      background: #f9fafb; border-radius: 10px; padding: 12px; margin-bottom: 10px;
+    }
+    .confirm-row {
+      display: flex; justify-content: space-between;
+      font-size: 10px; padding: 4px 0; border-bottom: 1px solid #e5e7eb;
+    }
+    .confirm-row:last-child { border: none; }
+    .confirm-row .label { color: #9ca3af; }
+    .confirm-row .value { font-weight: 600; color: #1a1a2e; }
+    .confirm-done-btn {
+      background: #FEE500; border-radius: 8px; padding: 11px;
+      text-align: center; font-size: 11px; font-weight: 700; color: #3c1e1e;
+      margin-top: 8px; cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      .flow-arrow { display: none; }
+      .flow-wrap { justify-content: center; }
+    }
+
     /* KAKAO FLOAT */
     .kakao-float {
       position: fixed; bottom: 28px; right: 28px; z-index: 200;
@@ -261,11 +466,12 @@
   <div class="nav-logo">온리프앤파트너스</div>
   <ul class="nav-links">
     <li><a href="#service">서비스 소개</a></li>
+    <li><a href="#flow">이용 동선</a></li>
     <li><a href="#how">이용 방법</a></li>
     <li><a href="#policy">이용약관</a></li>
     <li><a href="#company">회사 정보</a></li>
   </ul>
-  <a href="http://pf.kakao.com/_aHRzX/chat" class="nav-cta" target="_blank">💬 채널 상담 바로가기</a>
+  <a href="http://pf.kakao.com/_xbyuZX" class="nav-cta" target="_blank">💬 채널 상담 바로가기</a>
 </nav>
 
 <!-- HERO -->
@@ -274,7 +480,7 @@
   <h1>더 빠르고 편리한<br /><span>카카오톡 채널 상담</span></h1>
   <p>온리프앤파트너스의 공식 카카오톡 채널을 통해 언제 어디서나 편리하게 상담을 신청하고 빠른 답변을 받아보세요.</p>
   <div class="hero-buttons">
-    <a href="http://pf.kakao.com/_aHRzX/chat" class="btn-primary" target="_blank">💬 지금 바로 상담하기</a>
+    <a href="http://pf.kakao.com/_xbyuZX" class="btn-primary" target="_blank">💬 지금 바로 상담하기</a>
     <a href="#service" class="btn-secondary">서비스 소개 ↓</a>
   </div>
 </section>
@@ -317,6 +523,142 @@
         <h3>전담 담당자 연결</h3>
         <p>전문 상담원이 직접 응대하여 정확하고 친절한 서비스를 제공합니다.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE FLOW DEMO -->
+<section id="flow" class="demo">
+  <div class="container">
+    <div class="section-label">Service Flow</div>
+    <h2 class="section-title">서비스 이용 동선</h2>
+    <p class="section-desc">카카오 로그인부터 AI 상담 예약 확정까지, 실제 이용 흐름을 확인하세요.</p>
+
+    <div class="flow-wrap">
+
+      <!-- STEP 1: 카카오 로그인 -->
+      <div style="text-align:center;">
+        <div style="font-size:11px;font-weight:700;color:rgba(254,229,0,0.8);letter-spacing:1px;margin-bottom:10px;">STEP 1</div>
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen screen-login" style="padding:0;">
+            <div class="app-header"><span>온리프앤파트너스</span></div>
+            <div class="login-body">
+              <div class="login-title">로그인</div>
+              <div class="login-sub">카카오 계정으로 간편하게<br/>로그인하세요.</div>
+              <div class="kakao-login-btn">
+                <span style="font-size:16px;">💛</span> 카카오 로그인
+              </div>
+              <div class="login-divider">또는</div>
+              <div class="consent-box">
+                <div class="consent-title">서비스 이용 동의</div>
+                <div class="consent-item"><div class="consent-check">✓</div> 서비스 이용약관 (필수)</div>
+                <div class="consent-item"><div class="consent-check">✓</div> 개인정보 처리방침 (필수)</div>
+                <div class="consent-item"><div class="consent-check">✓</div> 카카오채널 메시지 수신 (선택)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:10px;">카카오 로그인</div>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <!-- STEP 2: 대시보드 -->
+      <div style="text-align:center;">
+        <div style="font-size:11px;font-weight:700;color:rgba(254,229,0,0.8);letter-spacing:1px;margin-bottom:10px;">STEP 2</div>
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen screen-dash" style="padding:0;">
+            <div class="dash-header">
+              <span>내 서비스 현황</span>
+              <div class="dash-avatar">👤</div>
+            </div>
+            <div class="dash-body">
+              <div class="dash-welcome">안녕하세요, <span>홍길동</span>님</div>
+              <div class="dash-sub">마지막 방문: 2024.09.14</div>
+              <div class="dash-card">
+                <div class="dash-card-title">📋 나의 이용 현황</div>
+                <div class="dash-stat">
+                  <div class="stat-pill">결제금액 120만원</div>
+                  <div class="stat-pill">잔여 0원</div>
+                </div>
+                <div class="dash-stat">
+                  <div class="stat-pill">마지막방문 3개월+</div>
+                </div>
+              </div>
+              <div class="dash-card">
+                <div class="dash-card-title">💬 AI 상담 서비스</div>
+                <div style="font-size:10px;color:#9ca3af;margin-bottom:8px;">전문 AI 상담사가 예약을 도와드립니다.</div>
+                <div class="dash-menu-btn">💬 카카오톡 채널 상담 시작</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:10px;">로그인 후 대시보드</div>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <!-- STEP 3: AI 채팅 -->
+      <div style="text-align:center;">
+        <div style="font-size:11px;font-weight:700;color:rgba(254,229,0,0.8);letter-spacing:1px;margin-bottom:10px;">STEP 3</div>
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen screen-chat" style="padding:0;display:flex;flex-direction:column;min-height:380px;">
+            <div class="chat-header">
+              <div class="chat-avatar">🤖</div>
+              <div>
+                <div class="chat-name">온리프 AI 상담사</div>
+                <div class="chat-status">● 응답 가능</div>
+              </div>
+            </div>
+            <div class="chat-body" style="flex:1;">
+              <div class="chat-bubble bubble-left">안녕하세요 홍길동님! 😊<br/>마지막 방문 후 3개월이 지났네요. 재방문 예약을 도와드릴까요?</div>
+              <div class="chat-bubble bubble-right">네, 예약하고 싶어요</div>
+              <div class="chat-bubble bubble-left">원하시는 날짜를 선택해 주세요!</div>
+              <div class="chat-btn-row">
+                <div class="chat-quick-btn">📅 이번 주 예약</div>
+                <div class="chat-quick-btn">📅 다음 주 예약</div>
+                <div class="chat-quick-btn">📅 날짜 직접 선택</div>
+              </div>
+            </div>
+            <div class="chat-input-row">
+              <div class="chat-input">메시지를 입력하세요</div>
+              <div class="chat-send">➤</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:10px;">AI 채팅 상담</div>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <!-- STEP 4: 예약 확정 -->
+      <div style="text-align:center;">
+        <div style="font-size:11px;font-weight:700;color:rgba(254,229,0,0.8);letter-spacing:1px;margin-bottom:10px;">STEP 4</div>
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen screen-confirm" style="padding:0;">
+            <div class="confirm-header"><span>예약 확정</span></div>
+            <div class="confirm-body">
+              <div class="confirm-icon">✅</div>
+              <div class="confirm-title">예약이 확정되었습니다!</div>
+              <div class="confirm-sub">카카오톡으로 예약 확인 메시지가<br/>발송되었습니다.</div>
+              <div class="confirm-card">
+                <div class="confirm-row"><span class="label">고객명</span><span class="value">홍길동</span></div>
+                <div class="confirm-row"><span class="label">예약일시</span><span class="value">2025.01.15 14:00</span></div>
+                <div class="confirm-row"><span class="label">서비스</span><span class="value">정기 시술</span></div>
+                <div class="confirm-row"><span class="label">담당자</span><span class="value">전문 상담사</span></div>
+                <div class="confirm-row"><span class="label">상태</span><span class="value" style="color:#16a34a;">확정 완료</span></div>
+              </div>
+              <div class="confirm-done-btn">💬 카카오톡에서 확인하기</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:10px;">예약 확정 알림</div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -424,7 +766,7 @@
         <p>회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 단, 이용자의 동의가 있거나 법령의 규정에 의한 경우는 예외로 합니다.</p>
 
         <h3>5. 개인정보 보호책임자</h3>
-        <p>성명: 차현용 | 이메일: hy.cha@medibuilder.com</p>
+        <p>성명: 차현용 | 이메일: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a1c9d88fc2c9c0e1ccc4c5c8c3d4c8cdc5c4d38fc2cecc">[email&#160;protected]</a></p>
 
         <h3>6. 이용자의 권리</h3>
         <p>이용자는 언제든지 자신의 개인정보를 조회하거나 수정, 삭제를 요청할 수 있습니다. 위 연락처로 문의해 주시기 바랍니다.</p>
@@ -441,7 +783,7 @@
   <div class="container">
     <h2>지금 바로 <span>카카오톡</span>으로<br />상담을 시작해보세요</h2>
     <p>전문 상담원이 빠르게 답변해드립니다.</p>
-    <a href="http://pf.kakao.com/_aHRzX/chat" class="btn-primary" target="_blank" style="display:inline-flex;">
+    <a href="http://pf.kakao.com/_xbyuZX" class="btn-primary" target="_blank" style="display:inline-flex;">
       💬 카카오톡 채널 상담하기
     </a>
   </div>
@@ -477,12 +819,12 @@
         <h3>연락처</h3>
         <div class="info-row">
           <span class="info-label">이메일</span>
-          <span class="info-value">hy.cha@medibuilder.com</span>
+          <span class="info-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="adc5d483cec5ccedc0c8c9c4cfd8c4c1c9c8df83cec2c0">[email&#160;protected]</a></span>
         </div>
         <div class="info-row">
           <span class="info-label">카카오채널</span>
           <span class="info-value">
-            <a href="http://pf.kakao.com/_aHRzX/chat" target="_blank" style="color: #1A1A2E; font-weight:700;">채널 바로가기 →</a>
+            <a href="http://pf.kakao.com/_xbyuZX" target="_blank" style="color: #1A1A2E; font-weight:700;">채널 바로가기 →</a>
           </span>
         </div>
         <div class="info-row">
@@ -504,18 +846,8 @@
 </footer>
 
 <!-- KAKAO FLOAT BUTTON -->
-<a href="http://pf.kakao.com/_aHRzX/chat" class="kakao-float" target="_blank" title="카카오톡 상담">💬</a>
+<a href="http://pf.kakao.com/_xbyuZX" class="kakao-float" target="_blank" title="카카오톡 상담">💬</a>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function showTab(tab) {
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    document.querySelectorAll('.policy-panel').forEach(p => p.classList.remove('active'));
-    document.getElementById('tab-' + tab).classList.add('active');
-    const tabs = document.querySelectorAll('.tab-btn');
-    if (tab === 'terms') tabs[0].classList.add('active');
-    else tabs[1].classList.add('active');
-  }
-</script>
-
-</body>
-</html>
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove
